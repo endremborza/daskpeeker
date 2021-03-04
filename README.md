@@ -40,11 +40,11 @@ This is a python package template
 
 [![Documentation Status](https://readthedocs.org/projects/mypackage/badge/?version=latest)](https://jelm.readthedocs.io/en/mypackage/?badge=latest)
 
-![![codeclimate](https://img.shields.io/codeclimate/maintainability/endremborza/fing.svg)](https://codeclimate.com/github/endremborza/fing)
+[![codeclimate](https://img.shields.io/codeclimate/maintainability/endremborza/fing.svg)](https://codeclimate.com/github/endremborza/fing)
 
-![![codecov](https://img.shields.io/codecov/c/github/endremborza/fing)](https://codecov.io/gh/endremborza/fing)
+[![codecov](https://img.shields.io/codecov/c/github/endremborza/fing)](https://codecov.io/gh/endremborza/fing)
 
-![![pypi](https://img.shields.io/pypi/v/fing.svg)](https://pypi.org/project/fing/)
+[![pypi](https://img.shields.io/pypi/v/fing.svg)](https://pypi.org/project/fing/)
 
 
 - from some ci somehow
