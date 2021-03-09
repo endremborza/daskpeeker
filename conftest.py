@@ -1,14 +1,16 @@
-def pytest_addoption(parser):
-    parser.addoption("--large", action="store_true", help="run large tests")
+import pytest
+from selenium.webdriver import Chrome
+
+from daskpeeker.tests.peeker_for_testing import PeekerRunner
 
 
-def pytest_generate_tests(metafunc):
+@pytest.fixture(scope="session")
+def browser(request):
+    pr = PeekerRunner()
+    pr.start()
+    request.addfinalizer(pr.stop)
 
-    if "fing" in metafunc.fixturenames:
-
-        fing = [1, 2, 5, 10]
-
-        if metafunc.config.getoption("large"):
-            fing += [50, 100]
-
-        metafunc.parametrize("fing", fing)
+    browser = Chrome()
+    browser.maximize_window()
+    request.addfinalizer(browser.close)
+    return browser
