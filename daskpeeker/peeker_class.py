@@ -68,6 +68,12 @@ logger = get_logger()
 
 
 class Peeker:
+    """
+    API for creating and launching a peeker app
+
+    create a subclass and properly define get_shared_figures
+    and get_report_elems
+    """
     def __init__(
         self,
         app_data: dd.DataFrame,
