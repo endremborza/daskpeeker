@@ -9,10 +9,3 @@
 [![pypi](https://img.shields.io/pypi/v/daskpeeker.svg)](https://pypi.org/project/daskpeeker/)
 
 A dashboard to peek at different slices of dask dataframes
-
-
-
-## what to modify:
-
-- the notebooks folder contents
-- conftest.py
